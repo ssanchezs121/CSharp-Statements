@@ -1,0 +1,6 @@
+C:\cenfotec\CSharp-Statements\Statements\Conditions\bin\Debug\Conditions.exe.config
+C:\cenfotec\CSharp-Statements\Statements\Conditions\bin\Debug\Conditions.exe
+C:\cenfotec\CSharp-Statements\Statements\Conditions\bin\Debug\Conditions.pdb
+C:\cenfotec\CSharp-Statements\Statements\Conditions\obj\Debug\Conditions.csprojResolveAssemblyReference.cache
+C:\cenfotec\CSharp-Statements\Statements\Conditions\obj\Debug\Conditions.exe
+C:\cenfotec\CSharp-Statements\Statements\Conditions\obj\Debug\Conditions.pdb
