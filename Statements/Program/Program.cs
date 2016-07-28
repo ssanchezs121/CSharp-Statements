@@ -18,12 +18,15 @@ namespace Program
                 {
                     case 'a':
                         addValues();
+                        Console.Clear();
                         break;
                     case 'b':
                         concatenationStrings();
+                        Console.Clear();
                         break;
                     case 'c':
                         loopANumber();
+                        Console.Clear();
                         break;
                     case 'd':
                         proceed = false;
@@ -31,34 +34,76 @@ namespace Program
                         Console.ReadKey();
                         break;
                     default:
-                        Console.WriteLine("Opcion Incorreca");
+                        Console.WriteLine("Opcion Incorrecta");
                         break;
                 }
-               
+
+                Console.ReadKey();
+
             } 
         }
 
         private static void loopANumber()
         {
-            throw new NotImplementedException();
+            int value;
+
+            Console.Write("Por Favor ingrese un numero \n");
+            Console.ReadLine();
+            value = Convert.ToInt32(Console.ReadLine());
+
+            for (int result = 0; result < value; result++)
+            {
+                Console.WriteLine("El Valor de result es: \n" + result);
+
+            }
+            Console.ReadKey();
         }
 
         private static void concatenationStrings()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Ingrese el primer texto por favor ");
+            Console.ReadLine();
+            string text1 = Convert.ToString(Console.ReadLine());
+
+            Console.WriteLine("Ingrese el segundo texto por favor");
+            string text2 = Convert.ToString(Console.ReadLine());
+
+            Console.WriteLine("El resultado de la concatenacion es: "+ text1 + " " + text2);
+            Console.ReadKey();
+
         }
 
         private static void addValues()
         {
-            throw new NotImplementedException();
+            int result;
+
+            Console.WriteLine("Digite un numero por favor:" );
+            Console.ReadLine();
+            int value1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Digite otro numero por favor:");
+            int value2 = Convert.ToInt32(Console.ReadLine());
+
+
+            result = value1 + value2;
+
+            Console.WriteLine("El resultado de la suma es:" + result);
+            Console.ReadKey();
+
+
         }
+
+
 
         static char printMenu()
         {
             Console.WriteLine("Seleccione una opcion:");
             Console.WriteLine("a - Sumar dos valores.");
+ 
             Console.WriteLine("b - Concantenar dos Strings.");
+
             Console.WriteLine("c - Iterar un numero.");
+
             Console.WriteLine("d - Salir.");
             char option = (char)Console.Read();
             Console.WriteLine();
